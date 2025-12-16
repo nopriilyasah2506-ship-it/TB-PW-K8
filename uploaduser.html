@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<div class="nav-container">
+<h2>Galerifess User</h2>
+<div>
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
+        </button>
+<button class="dark-toggle" onclick="logout()">Logout</button>
+</div>
+</div>
+</nav>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h3>User Menu</h3>
+    <ul>
+        <li><a href="homeuser.html">Beranda</a></li>
+        <li><a href="galeriuser.html">Galeri Saya</a></li>
+        <li><a href="uploaduser.html">Upload</a></li>
+        <li><a href="komentaruser.html">Komentar</a></li>
+        <li><a href="profileuser.html">Profil</a></li>
+    </ul>
+</div>
+<div class="main-content">
+    <h1>Upload Postingan</h1>
+
+    <input type="file" id="image">
+    <textarea id="caption" placeholder="Caption..."></textarea>
+    <button class="btn-upload" onclick="uploadPost()">Upload</button>
+</div>
+
+<script src="javascript2.js"></script>
+</body>
+</html>

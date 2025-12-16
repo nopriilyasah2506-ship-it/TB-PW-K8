@@ -1,0 +1,91 @@
+/* ===============================
+   MODERN UI ENHANCEMENT
+================================ */
+
+/* Smooth transition global */
+* {
+    transition: background-color .3s, color .3s, transform .25s;
+}
+
+/* Navbar lebih premium */
+.navbar {
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.9);
+}
+
+/* Sidebar floating feel */
+.sidebar {
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+/* Card glow hover */
+.gallery-card,
+.user-card,
+.review-card,
+.stat-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-card::after,
+.stat-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+    transform: translateX(-100%);
+}
+
+.gallery-card:hover::after,
+.stat-card:hover::after {
+    transform: translateX(100%);
+    transition: .7s;
+}
+
+/* Image hover depth */
+.gallery-image {
+    filter: brightness(0.95);
+}
+
+.gallery-card:hover .gallery-image {
+    transform: scale(1.08);
+    filter: brightness(1.05);
+}
+
+/* Button modern */
+.btn-upload {
+    box-shadow: 0 8px 20px rgba(79,130,182,.35);
+}
+
+.btn-upload:hover {
+    transform: translateY(-3px) scale(1.03);
+}
+
+/* Sidebar active indicator */
+.sidebar ul li a.active {
+    position: relative;
+}
+
+.sidebar ul li a.active::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    width: 6px;
+    height: 60%;
+    background: #4f82b6;
+    border-radius: 6px;
+    transform: translateY(-50%);
+}
+
+/* Dark mode glow */
+body.dark-mode .gallery-card,
+body.dark-mode .stat-card {
+    box-shadow: 0 10px 25px rgba(0,0,0,.6);
+}

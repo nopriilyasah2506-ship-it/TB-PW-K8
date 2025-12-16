@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kelola User</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<!-- NAV + SIDEBAR (SAMA) -->
+
+<nav class="navbar">
+<div class="nav-container">
+<h2>Galerifess Admin</h2>
+<div>
+<button class="dark-toggle" onclick="toggleDark()">🌙</button>
+        </button>
+<button class="dark-toggle" onclick="logout()">Logout</button>
+</div>
+</div>
+</nav>
+
+<aside class="sidebar">
+<h3>Admin Menu</h3>
+<ul>
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="kelolauser.html">Kelola User</a></li>
+<li><a href="kelolagaleri.html">Kelola Galeri</a></li>
+<li><a href="kelolakomentar.html">Kelola Komentar</a></li>
+<li><a href="statistik.html">Statistik</a></li>
+</ul>
+</aside>
+
+<main class="main-content">
+<h1>Kelola User</h1>
+
+<table class="data-table">
+<tr>
+<th>ID</th><th>Username</th><th>Email</th><th>Aksi</th>
+</tr>
+<tr>
+<td>1</td><td>novri</td><td>novri@mail.com</td>
+<td><button class="btn-danger" onclick="deleteUser(this)">Hapus</button></td>
+</tr>
+</table>
+</main>
+<script src="javascript2.js"></script>
+</body>
+</html>
